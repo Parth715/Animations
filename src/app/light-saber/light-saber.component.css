@@ -1,0 +1,69 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+body{
+    height: 90vh;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightsaber{
+    position: absolute;
+    width: .75rem;
+    height: 7rem;
+    margin-top: 15%;;
+}
+
+.handle{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 4px 4px;
+    background-image: linear-gradient(
+        silver 0 10px,
+        hsl(39 75% 50%) 0 14px,
+        silver 0 15px,
+        black 0 20px,
+        silver 0 22px,
+        black 0 25px,
+        silver 0 27px,
+        black 0 30px,
+        silver 0 32px,
+        black 0 35px,
+        silver 0 37px,
+        black 0 40px,
+        silver 0 42px,
+        black 0 45px,
+        silver 0 47px,
+        black 0 50px,
+        silver 0 60px,
+        hsl(39 75% 50%) 60px 80px,
+        silver 0 100%
+    );
+}
+
+.switch{
+    position: relative;
+    height: 30px;
+    width: 10px;
+    background-color: red;
+    top: 5%;
+    border-radius: 100vw;
+}
+
+
+.lightsaber .handle .blade{
+    position: relative;
+    background-color: rgb(228, 95, 83);
+    width: 100%;
+    height: 250%;
+    bottom: 250%;
+    border-radius: 100vw 100vw 0 0;
+    box-shadow: 0 0 1em hsl(0, 100%, 50%),
+    0 0 1.2em hsl(0, 100%, 50%),
+    0 0 1.7em hsl(0, 100%, 50%),
+    0 0 2.2em hsl(0, 100%, 50%);
+}
